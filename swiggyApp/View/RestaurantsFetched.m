@@ -8,6 +8,7 @@
 
 #import "RestaurantsFetched.h"
 #import "UIImageView+WebCache.h"
+#import "DefinesURL.h"
 
 @interface RestaurantsFetched()
 @property (weak, nonatomic) IBOutlet UIImageView *restaurantMainImage;
@@ -75,17 +76,19 @@ self.amountForTwo.text = restaurantDict[@"costForTwo"];
 
     }
     
-//    if ([restaurantDict[@"cid"] isKindOfClass:[NSNull class]] || restaurantDict[@"cid"] == nil ||  [restaurantDict[@"cid"] isEqualToString:@"null"])
-//    {
-//        self.restaurantMainImage.image = [UIImage imageNamed:@"default_panellist"];
-//        
-//    }
-//    else
-//    {
-//        [self.restaurantMainImage sd_setImageWithURL:[NSURL URLWithString:restaurantDict[@"cid"]]
-//                          placeholderImage:[UIImage imageNamed:@"default_panellist"]];
-//        
-//    }
+    NSString * imageString = [imageURL stringByAppendingString:restaurantDict[@"cid"]];
+    
+    if ([imageString isKindOfClass:[NSNull class]] || imageString == nil ||  [imageString isEqualToString:@"null"])
+    {
+        self.restaurantMainImage.image = [UIImage imageNamed:@"Placeholder"];
+        
+    }
+    else
+    {
+        [self.restaurantMainImage sd_setImageWithURL:[NSURL URLWithString:imageString]
+                          placeholderImage:[UIImage imageNamed:@"Placeholder"]];
+        
+    }
     _restaurantDict = restaurantDict;
 }
 @end

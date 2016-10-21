@@ -43,13 +43,13 @@
                                             <constraint firstAttribute="width" constant="16" id="znn-Ga-RCX"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="xUt-Z0-KO7">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="xUt-Z0-KO7">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="6qf-Cd-qdK"/>
                                             <constraint firstAttribute="width" constant="16" id="uFP-Sd-QlP"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="open" translatesAutoresizingMaskIntoConstraints="NO" id="6Jg-s4-nlh">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="open" translatesAutoresizingMaskIntoConstraints="NO" id="6Jg-s4-nlh">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="16" id="R8o-zh-FIh"/>
                                             <constraint firstAttribute="height" constant="16" id="VfR-B4-Ocs"/>
@@ -119,7 +119,7 @@
                                             <frame key="frameInset" width="375" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="elF-hX-ccX">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="elF-hX-ccX">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="4kx-Vw-MKN"/>
                                                         <constraint firstAttribute="width" constant="80" id="kzI-aC-g4m"/>

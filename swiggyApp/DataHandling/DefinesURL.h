@@ -11,4 +11,5 @@
 
 #define BaseURL @"https://api.myjson.com/bins/ngcc?"
 #define RestaurantsURL @"page=0"
+#define imageURL @"https://res.cloudinary.com/swiggy/image/upload/"
 #endif /* DefinesURL_h */
